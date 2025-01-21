@@ -1,5 +1,32 @@
-remote_theme: riggraz/no-style-please 
-title: Marcelo F Cândido
+author: Marcelo F Cândido
+baseurl: ''
+description: >
+  A simple blog from a simple DevOps Engineer
+email: blog@marcelofcandido.com
+favicon: assets/logo.png
+jektex:
+  cache_dir: .jektex-cache
+  ignore: ["*.xml"]
+  macros:
+    - - \Q
+      - \mathbb{Q}
+    - - \C
+      - \mathbb{C}
+  silent: false
 logo: profile/profile.jpeg
-description: A simple blog from a simple DevOps Engineer
-
+permalink: /:slug.html
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jektex
+remote_theme: riggraz/no-style-please
+sass:
+  style: compressed
+theme_config:
+  appearance: auto
+  back_home_text: ..
+  date_format: '%Y-%m-%d'
+  lowercase_titles: true
+  show_description: true
+title: Marcelo F Cândido
+url: https://blog.marcelofcandido.com
